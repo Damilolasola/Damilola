@@ -1,0 +1,13 @@
+.gap{
+    margin:-10px 10px;
+    height:40px;
+    /*display:flex;
+    flex-direction:row;*/
+    gap:500px;
+    text-align:center;
+}
+a{
+    text-decoration:none;
+    color:red;
+    margin:0px 30px;
+}

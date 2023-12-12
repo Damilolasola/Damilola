@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    
+</head>
+<link rel="stylesheet" type="text/css" href="bookings.css" />
+<script src="lare.js"></script>
+<body>
+    <div class="gap">
+    <hr>
+        <a href="project.html">HOME</a>|
+        <a href="larry.html">IMAGES</a>|
+        <a href="sola.html">CONTACT US</a>|
+        <a href="form.html">TRAIN</a>|
+        <a href="bookings.html">PLACE ORDER</a>
+    </div>
+<hr>
+    <form id="myform" name="myform" action="send_form.php" method="post">
+    <td>Name:</td>
+    <input type="text" name="firstname" required >
+        </tr>
+        <p>
+        <tr>
+    <td>Email address:</td>
+    <input type="email" name="email" size="30"maxlength="100" 
+    placeholder="enter your email address" required></td>
+        </p>
+        </tr>
+        <tr>
+            <td> Address:</td>
+            <input type="text" name="address" placeholder="for home delivery"> </td>
+        </tr>
+        <p>
+        <tr>
+            <td> Phone number:</td>
+            <input type="numeric" name="number" required>
+            </p>
+        </tr>
+        <p> 
+        <label for="choices">What you want to use the cake for:</label>
+        <select id="choices" name="choices" required>
+             <option value="" disabled selected>Select an option</option>
+             <option value="">birthday</option>
+             <option value="">wedding</option> 
+             <option value="">house warming</option>
+             <option value="">others</option>
+       </select>
+         </option>
+         </p>
+              <tr>
+               <td>What should be written on your cake<sup>*optional</sup>:
+               </td>
+ <input type="text"name="written text">
+             </tr> 
+        <p>
+              <tr>
+ <td>Cake design:</td>
+            <input type="file"name="file" required>
+              </tr>
+              </p>
+           
+              <tr>
+               <td>Cake description:</td>
+           <td> <textarea name="written text" rows="3" cols="100"placeholder="diameter=10inch height=10inch color=red this should be the format so as to know your price"></textarea></td>
+              </tr>
+           
+              <p>
+                      <tr>
+               <p><td>Comment:</td></p>
+            <td><textarea name ="comments" row="6"  cols="99" placeholder="Comments"></textarea></td>
+                      </tr>
+              </p>
+    <input type="submit"name="myForm" value=submit>
+    <input type="reset"name="myForm" value=clear>
+    </form>
+        
+        </body>
+</html>

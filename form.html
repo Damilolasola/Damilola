@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>project</title>
+    <link rel="stylesheet" type="text/css" href="lare.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="gap">
+    <hr>
+        <a href="project.html">HOME</a>|
+        <a href="larry.html">IMAGES</a>|
+        <a href="sola.html">CONTACT US</a>|
+<a href="form.html">TRAIN</a>|
+<a href="bookings.html">PLACE ORDER</a>
+</div>
+<hr>
+</div>
+    <form id="myform" name="myform" action="send_form.php" method="post">
+        <h1>REGISTRATION FORM </h1>
+        <tr>
+            <td>Name:</td>
+    <input type="text" name="firstname" required 
+    placeholder="Surname FirstName" required></td>
+        </tr>
+  <p>
+        <tr>
+    <td>Email address:</td>
+    <input type="email" name="email" size="30"maxlength="100" 
+    placeholder="enter your email address" required></td>
+        </p>
+    </tr>
+    <tr>
+     <p>   
+    <tr>
+                <td>Age:</td>
+              <input type="number"name="age" min="17" max="60" required>
+              </tr>
+            </p>
+            <td>signature:</td>
+            <input type="file"name="age" required>
+              </tr>
+              <h6>Please tick as applicable course(s) you want to learn.</h6>
+              
+              <p>
+            
+    <form onsubmit="return validateForm()">                         <label><input type="checkbox" name="level" id="checkbox1">Beginner/intermediate level (baking and decorating)</label><br>
+                             <label><input type="checkbox" name="level" id="checkbox2">Advanced cake decorating course (sugarcraft)</label><br>
+                             <label><input type="checkbox" name="level" id="checkbox3">Venue decoration Course,Balloon,Floral,Drapery,Table etc</label><br>
+                             <label><input type="checkbox" name="level" id="checkbox4">Modelling (Human &amp; Animal)</label><br>
+                             <label><input type="checkbox" name="level" id="checkbox5">Private Lessons/Tailor made courses</label><br>
+                             <label><input type="checkbox" name="level" id="checkbox6">Full baking course (pastry,cake)</label><br>
+                             <label><input type="checkbox" name="level" id="checkbox7">3 months Certificate Course in baking,cake decoration,catering and cookery</label><br>
+              
+              
+    <input type="submit" value="submit">
+    <input type="reset"name="myForm" value=clear>
+            
+            <script>
+            function validateForm() {
+            var checkbox = document.querySelctorAll('input[type="checkbox"]')
+            var checked = false;
+            for (var i = 0; i < checkboxes.length; i++){
+            if (checkboxes[i].checked){
+            checked = true;
+            break
+            }
+      }
+            if (!checked){
+            alert("Please check at least one checkbox!");
+            return false;
+    }
+            return true
+            }
+            
+            </script>
+            </form>
+
+</body>
+</html>
